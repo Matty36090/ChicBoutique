@@ -1,0 +1,631 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 15px/1.8 "Lora", sans-serif;
+    color: #777;
+    padding: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+ 
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  
+  }
+  .bgimg-1 {
+    background-image: url("img/location/Digbeth-SevenCapital-2-1800x1200.jpg");
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("img/location/bham-now-100.webp");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("img/location/chetto-golf-digbeth.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    z-index: 1;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+
+ 
+  
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  body {
+    background-color: black;
+    color: white;
+    font-family: "lora", serif;
+  }
+  
+  p {
+    font-family: "lora", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .logotext {
+    text-align: center;
+    margin-left: -10px;
+    color: white;
+    background-color: black;
+    margin-top: -10px;
+    padding: 10px;
+    font-family: "lora", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+  }
+  
+  #shopnow {
+    text-align: center;
+  
+    color: white;
+    background-color: black;
+  
+    padding: 10px;
+    font-family: "lora", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 25%;
+  }
+  
+  #shopnow:hover {
+    background-color: #555;
+  }
+  
+  .navigation {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    font-family: "lora", serif;
+    justify-content: space-around;
+    display: flex;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* For other browsers */
+    top: 0; /* Sets the navigation bar to the top of the viewport */
+    z-index: 1000; /* Ensures the navigation is on top of other elements */
+  }
+  
+  /* Basic reset for body margin and padding */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "lora", sans-serif;
+  }
+  
+  /* Style for the sections */
+  .section {
+    padding: 50px 20px;
+    text-align: center;
+    color: black;
+  }
+  .section.white {
+    display: flex;
+    align-items: center; /* Vertically aligns the items in the middle */
+    justify-content: space-between; /* Spreads out the text block and the image */
+  }
+  
+  .text-content {
+    width: 60%; /* Adjust based on your design preference */
+    margin-right: auto;
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: "lora", sans-serif;
+  }
+  
+  /* White sections */
+  .white {
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .section.black {
+    display: flex;
+    align-items: center; /* Vertically aligns the items in the middle */
+    justify-content: space-between; /* Spreads out the text block and the image */
+  }
+  
+  /* Black sections with white text */
+  .black {
+    background-color: black;
+    color: white;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .navigation a {
+    transition: color 0.3s, text-decoration-color 0.3s;
+    text-decoration: none;
+    color: white; /* Default link color */
+  }
+  
+  .navigation a:hover,
+  .navigation a.active {
+    color: #555; /* Hover and active link color */
+    text-decoration: underline;
+    text-decoration-color: #555;
+  }
+  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the area without distortion */
+  }
+  
+  .banner button {
+    position: absolute;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    left: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  
+  #pauseButton {
+    left: 55%;
+  }
+  
+  #pauseButton:hover {
+    background-color: #555;
+  }
+  
+  #playButton {
+    left: 45%;
+  }
+  
+  #playButton:hover {
+    background-color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    /* for mobile optimisation */
+    .section.white {
+      flex-direction: column; /* Stacks the flex items vertically */
+    }
+  
+    .section.black {
+      flex-direction: column; /* Stacks the flex items vertically */
+    }
+    #imghome {
+      max-width: 100%; /* Allows the image to take full width of the container on small screens */
+      margin-top: 20px; /* Adds space between the text and the image */
+    }
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: none;
+    color: #555;
+  }
+  
+  .nav-links a:active {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hamburger,
+  .nav-links {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #333;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hidden by default */
+      list-style-type: none;
+      margin: 0;
+      text-align: center;
+      color: #333;
+    }
+  
+    .nav-links a {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section.white {
+      flex-direction: column; /* Stacks items vertically on small screens */
+      text-align: center; /* Center-aligns the text */
+    }
+    .section.black {
+      flex-direction: column; /* Stacks items vertically on small screens */
+      text-align: center; /* Center-aligns the text */
+    }
+    .text-content,
+    #imghome {
+      width: 100%; /* Allows both text and image to take full width of the container */
+      max-width: none; /* Resets any max-width set earlier */
+    }
+    #imghome {
+      margin-top: 20px; /* Adds some space between the text content and the image */
+    }
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-links a:active {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hamburger,
+  .nav-links {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: white;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none; /* Hidden by default */
+      list-style-type: none;
+      margin: 0;
+      text-align: center;
+      color: white;
+    }
+  
+    .nav-links a {
+      display: block;
+    }
+  }
+  
+  /* Mobile style - nav links not displayed initially */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none; /* This should hide the nav links on mobile */
+      flex-direction: column;
+      width: 100%;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* for mobile optimisation */
+    .nav-links {
+      display: none !important; /* Hides the nav links on larger screens */
+    }
+  }
+  
+  /*.main {
+    padding: 20px;
+    display: inline;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "lora", serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }*/
+  
+  .main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in larger screens */
+    gap: 20px; /* Adds space between cards */
+  }
+  
+  @media (max-width: 1024px) {
+    .main {
+      grid-template-columns: repeat(
+        2,
+        1fr
+      ); /* 2 columns for tablets and smaller desktops */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .main {
+      grid-template-columns: 1fr; /* 1 column for mobile screens */
+    }
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    width:300px;
+    color: black;
+   
+    padding: 20px;
+    border-top: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  img {
+    object-fit: cover;
+    height: 410px;
+  }
+  
+  .price {
+    color: black;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    font-family: "lora", serif;
+    border-radius: 8px; /* Adds rounded corners */
+    position: relative; /* Set position context for absolute positioning of pseudo-element or img */
+    padding-left: 40px; /* Make space for the icon */
+  }
+  
+  .card button::before {
+    content: "";
+    position: absolute;
+    left: 12px; /* Adjust based on actual padding and desired spacing */
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url("img/favicon.ico");
+    background-size: cover;
+    width: 20px; /* Size of the icon */
+    height: 20px; /* Size of the icon */
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+ 
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-family: "lora", serif;
+
+  
+  bottom: 0%;
+ 
+  margin-top: auto;
+  border-top: 1px solid #333;
+}
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    width: auto;
+  
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+  }
+  
+  .prev::after,
+  .next::after {
+    content: ""; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    width: 80%; 
+    height: 50%; 
+    background-color: transparent;
+    transition: background-color 0.6s ease;
+    transform: translate(-50%, -50%); 
+    border-radius: inherit; 
+  }
+  
+  .prev:hover::after,
+  .next:hover::after {
+    background-color: rgba(32, 31, 31, 0.8);
+  }
+  
+  .card img {
+    display: none; /* Hide all images by default */
+    width: 100%; /* Full width of the card */
+  }
+  
+  .card img:first-of-type {
+    display: block; /* Show only the first image initially */
+  }
+  
+  .cart-btn {
+    z-index: 2000;  /* Make sure it's above other content */
+    background-color: #333;  
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    font-family: "lora", serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.2s;
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+    
+  }
+  
+  .cart-btn:hover {
+    background-color: #555;  /* Darken on hover */
+    transform: scale(1.05);  /* Slight zoom effect */
+  }
+  
+  .cart-btn:focus {
+    outline: none;  /* Removes the default outline to maintain the design */
+    background-color: #777;  /* Change color on focus for accessibility */
+  }
+  
+  @media (max-width: 768px) {
+    .cart-btn {
+      font-size: 14px;  /* Smaller font size for mobile */
+      padding: 8px 16px;  /* Smaller padding for mobile */
+      top: 5px;  /* Adjust the top position */
+      right: 5px;  /* Adjust the right position */
+      display: always;  /* Always show the button on mobile */
+    }
+  }
+  
+  h1 {
+    position: relative;
+    display: inline-block;  /* Ensures the pseudo-element aligns exactly under the text */
+  }
+  
+  h1::after {
+    content: "";            /* Required for pseudo-elements */
+    display: block;         /* Makes it a block-level element */
+    width: 100%;            /* Ensures the line is as wide as the text */
+    height: 1px;            /* Height of the line */
+    background: grey;    /* Color of the line */
+    position: absolute;     /* Positions relative to the h1 */
+    left: 0;                /* Aligns to the left edge of the h1 */
+    bottom: -10px;          /* Adjust the distance under the text */
+  }
+  
+  .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px; /* Size of the icons */
+  }
+  
+  .social-links a:hover {
+    color: #333; /* Color change on hover */
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,350 @@
+body,
+html {
+  scroll-behavior: smooth;
+}
+.main-content {
+  overflow-x: hidden;
+}
+
+.logotext {
+  text-align: center;
+  margin-left: -10px;
+  color: white;
+  background-color: black;
+  margin-top: -10px;
+  padding: 10px;
+  font-family: "lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
+}
+
+#shopnow {
+  text-align: center;
+  
+  color: white;
+  background-color: black;
+  text-decoration: none;
+
+  padding: 10px;
+  font-family: "lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 25%;
+  
+
+}
+
+#shopnowwhite{
+  text-align: center;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-family: "lora", serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 25%;
+
+}
+
+#shopnowwhite:hover {
+  background-color: #555;
+}
+
+
+
+#shopnow:hover {
+  background-color: #555;
+}
+
+.navigation {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-family: "lora", serif;
+  justify-content: space-around;
+  display: flex;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky; /* For other browsers */
+  top: 0; /* Sets the navigation bar to the top of the viewport */
+  z-index: 1000; /* Ensures the navigation is on top of other elements */
+}
+
+/* Basic reset for body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "lora", sans-serif;
+}
+
+/* Style for the sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+  color: black;
+}
+.section.white {
+  display: flex;
+  align-items: center; /* Vertically aligns the items in the middle */
+  justify-content: space-between; /* Spreads out the text block and the image */
+}
+
+.text-content {
+  width: 60%; /* Adjust based on your design preference */
+  margin-right: auto;
+}
+
+p {
+  font-size: 20px;
+  font-family: "lora", sans-serif;
+}
+
+
+
+/* White sections */
+.white {
+  background-color: white;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  
+}
+
+.section.black {
+  display: flex;
+  align-items: center; /* Vertically aligns the items in the middle */
+  justify-content: space-between; /* Spreads out the text block and the image */
+}
+
+/* Black sections with white text */
+.black {
+  background-color: black;
+  color: white;
+  text-align: left;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  
+}
+
+.navigation a {
+  transition: color 0.3s, text-decoration-color 0.3s;
+  text-decoration: none;
+  color: white; /* Default link color */
+}
+
+.navigation a:hover,
+.navigation a.active {
+  color: #555; /* Hover and active link color */
+  text-decoration: underline;
+  text-decoration-color: #555;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  font-family: "lora", serif;
+
+  
+  bottom: 0%;
+ 
+  margin-top: auto;
+  border-top: 1px solid #333;
+}
+
+
+  
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the area without distortion */
+}
+
+.banner button {
+  position: absolute;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  left: 20px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+}
+
+#pauseButton {
+  left: 55%;
+}
+
+#pauseButton:hover {
+  background-color: #555;
+}
+
+#playButton {
+  left: 45%;
+}
+
+#playButton:hover {
+  background-color: #555;
+}
+
+
+
+img {
+  width: 500px;
+  margin-right: auto;
+  height: 600px;
+  object-fit: cover;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .section.white {
+    flex-direction: column; /* Stacks items vertically on small screens */
+    text-align: center; /* Center-aligns the text */
+  }
+  .section.black {
+    flex-direction: column; /* Stacks items vertically on small screens */
+    text-align: center; /* Center-aligns the text */
+  }
+  .text-content,
+  #imghome {
+    width: 100%; /* Allows both text and image to take full width of the container */
+    max-width: none; /* Resets any max-width set earlier */
+  }
+  #imghome {
+    margin-top: 20px; /* Adds some space between the text content and the image */
+  }
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+.nav-links a:active {
+  text-decoration: none;
+  color: #333;
+}
+
+.hamburger,
+.nav-links {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #333;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Hidden by default */
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+    color: #333;
+  }
+
+  .nav-links a {
+    display: block;
+  }
+}
+
+/* Mobile style - nav links not displayed initially */
+@media (max-width: 768px) {
+  .navigation {
+    display: none; /* This should hide the nav links on mobile */
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  /* for mobile optimisation */
+  .nav-links {
+    display: none !important; /* Hides the nav links on larger screens */
+  }
+}
+
+h1 {
+  position: relative;
+  display: inline-block;  /* Ensures the pseudo-element aligns exactly under the text */
+}
+
+h1::after {
+  content: "";            /* Required for pseudo-elements */
+  display: block;         /* Makes it a block-level element */
+  width: 100%;            /* Ensures the line is as wide as the text */
+  height: 1px;            /* Height of the line */
+  background: grey;    /* Color of the line */
+  position: absolute;     /* Positions relative to the h1 */
+  left: 0;                /* Aligns to the left edge of the h1 */
+  bottom: -10px;          /* Adjust the distance under the text */
+}
+
+iframe{
+  width: 500px;
+  margin-right: auto;
+  height: 500px;
+  margin-left: auto;
+  border-radius: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px; /* Size of the icons */
+}
+
+.social-links a:hover {
+  color: #333; /* Color change on hover */
+}
+
+
+
+
+

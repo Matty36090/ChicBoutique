@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styleproducts.css" />
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/ptn2mly.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Chic-Boutique</title>
+</head>
+
+<body>
+  <div class="logotext">
+    <h1>Summer Fashion</h1>
+  </div>
+
+  <button class="hamburger" aria-controls="nav-links" aria-expanded="false">
+    &#9776;
+  </button>
+
+  <div class="nav-links" style="display: none">
+    <a href="index.html">HOME</a>
+    <a href="products.html">SIMPLY-CHIC</a>
+    <a href="wedding.html">WEDDING</a>
+    <a href="index.html#eyewear">EYEWEAR</a>
+    <a href="index.html#theboutique">THE BOUTIQUE</a>
+    <a href="index.html#fragrance">FRAGRANCE</a>
+    <a href="index.html#location">LOCATION</a>
+    <a href="index.html#about">ABOUT</a>
+  </div>
+
+  <div class="shopping-cart">
+    <button class="cart-btn" style="
+          position: fixed;
+          top: 10px;
+          right: 10px;
+          background: none;
+          border: none;
+          color: white;
+          font-size: 24px;
+          cursor: pointer;
+        ">
+      🛒 <span id="cart-count">0</span> Items
+    </button>
+
+    <div id="notification" style="
+          display: none;
+          position: fixed;
+          top: 60px;
+          right: 20px;
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        ">
+      Item added to cart!
+    </div>
+  </div>
+
+  <div class="navigation">
+    <a href="index.html">HOME</a>
+    <a href="products.html">SIMPLY-CHIC</a>
+    <a href="wedding.html">WEDDING</a>
+    <a href="index.html#eyewear">EYEWEAR</a>
+    <a href="index.html#theboutique">THE BOUTIQUE</a>
+    <a href="index.html#fragrance">FRAGRANCE</a>
+    <a href="index.html#location">LOCATION</a>
+    <a href="index.html#about">ABOUT</a>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <img src="img/summer/BellaTieredMaxi_2808x.webp" alt=" Classic Dress View 1"
+        style="width: 100%; display: block" />
+      <img src="img/summer/24-02-16_16FEB221_2808x.webp" alt="Classic Dress View 2"
+        style="width: 100%; display: none" />
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <h2>Summer Dress</h2>
+      <p class="price">£129.99</p>
+      <p>Place holder text</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img src="img/summer/124MHAT034731_NaturalTaupe_Look75_2023-07-25_SS24_Ecom10563_5_2808x.webp" alt="Hat View 1"
+        style="width: 100%; display: block" />
+      <img src="img/summer/FrancescaHatNaturaltaupe7_abd8f070-3411-4b22-91d3-041f432ce531_2808x.webp" alt="Hat View 2"
+        style="width: 100%; display: none" />
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <h2>Summer Hat</h2>
+      <p class="price">£79.99</p>
+      <p>Place holder text</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="card">
+      <img
+        src="img/summer/DoubeBreastedBlazer_HotPinkLinen_Look205_2023-08-02_SS24_Ecom22191_5_896aa645-4746-4a74-aa69-3593e081dbd9_2808x.webp"
+        alt="Jacket View 1" style="width: 100%; display: block" />
+      <img src="img/summer/124-02-07_7and8FEB442_cf11dd28-61e9-487c-a14f-095a7aa77b16_1714x.webp" alt="Jacket View 2"
+        style="width: 100%; display: none" />
+
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+      <h2>Summer Blazer</h2>
+      <p class="price">£109.99</p>
+      <p>Place holder text</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://twitter.com/" target="blank" title="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://facebook.com" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <p>© 2024 Chic-Boutique. A Student Project.</p>
+  </footer>
+
+
+
+
+
+
+  <script src="script2.js"></script>
+</body>
+
+</html>
